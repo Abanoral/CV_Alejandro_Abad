@@ -1,17 +1,24 @@
-## 🚀 Ver online
+# 💼 CV Online — Alejandro Abad Noriega
 
-El CV está publicado en **GitHub Pages**:  
-👉 https://abanoral.github.io/cv/
+Este repositorio contiene mi **Currículum Vitae en formato web** con soporte de **i18n (ES/EN)** sin duplicar estructura.
 
-## 🔧 Tecnologías utilizadas
+## 📂 Estructura
+```
+cv/
+├── index.html
+├── assets/
+│   ├── yo.jpg
+│   └── i18n/
+│       ├── es.json
+│       └── en.json
+└── README.md
+```
 
--   **HTML5 + CSS3** (sin frameworks, lightweight).
--   Variables CSS para personalizar colores y tipografías.
--   Diseño responsive y estilos optimizados para impresión.
+## 🌐 Ver online (GitHub Pages)
+- Español: `https://abanoral.github.io/cv/?lang=es`
+- English: `https://abanoral.github.io/cv/?lang=en`
 
-## 📫 Contacto
-
--   📍 Cornellà de Llobregat (Barcelona)
--   ✉️ [alejandro.abad.noriega@gmail.com](mailto:alejandro.abad.noriega@gmail.com)
--   🐙 [github.com/abanoral](https://github.com/abanoral)
--   💼 [linkedin.com/in/alejandroabadnoriega](https://www.linkedin.com/in/alejandroabadnoriega)
+## 🛠️ Notas técnicas
+- HTML + CSS puro, con **claves `data-i18n`**.
+- Script mínimo que lee `?lang=es|en`, `localStorage` y `navigator.language`.
+- Impresión optimizada (`@media print`) con foto y márgenes correctos.
